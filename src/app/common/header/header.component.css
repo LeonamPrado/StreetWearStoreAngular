@@ -45,6 +45,7 @@ a {
   .logo {
     font-size: 34px;
     text-shadow: rgba(255, 255, 255, 0.315) 8px 11px;
+    letter-spacing: -4px;
   }
   .icon{
     height: 45px;
@@ -59,6 +60,7 @@ a {
 @media (max-width: 630px) {
   .logo {
     font-size: 30px;
+    letter-spacing: -2px;
   }
 }
 @media (max-width: 565px) {

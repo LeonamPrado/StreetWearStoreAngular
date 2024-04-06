@@ -20,9 +20,7 @@ th{
   font-style: normal;
   font-size: 18px;
 }
-.carousel-indicators {
-  bottom: 60px;
-}
+
 @media (max-width: 1150px) {
   .carousel-indicators {
     bottom: 60px;
@@ -63,6 +61,9 @@ th{
   .carousel-indicators {
     bottom: 400px;
   }
+  .container-xl{
+    min-height: 75vh;
+  }
   .h3{
     font-size: 14px;
   }
@@ -80,6 +81,9 @@ th{
     }
     .sTable{
       font-size: 10px;
+    }
+    .carousel-indicators {
+      bottom: 320px;
     }
   }
   
