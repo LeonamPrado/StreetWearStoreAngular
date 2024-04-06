@@ -34,16 +34,17 @@ a {
   position:relative;
   left:-20px;
   top:-20px;
-  opacity:0.9;
 }
 @media (max-width: 1245px) {
   .logo {
     font-size: 54px;
+    text-shadow: rgba(255, 255, 255, 0.315) 10px 20px;
   }
 }
 @media (max-width: 1015px) {
   .logo {
     font-size: 34px;
+    text-shadow: rgba(255, 255, 255, 0.315) 8px 11px;
   }
   .icon{
     height: 45px;
@@ -79,6 +80,7 @@ a {
   }
   .logo {
     font-size: 21px;
+    text-shadow: rgba(255, 255, 255, 0.315) 4px 8px;
   }
   .cartNumber{
     font-size: 10px;

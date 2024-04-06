@@ -32,9 +32,8 @@ export class ProductComponent implements OnInit {
     if(this.cartService.getCartProducts().map((a)=>a).filter((p)=>p.id === this.id && p.size === this.productSize).length !== 0){
       return this.Router.navigate(['/cart'])
     }
-    this.product[0].size = this.productSize
-    console.log(this.product[0])
-    this.cartService.addToCart(this.product[0])
+    
+    this.cartService.addToCart(new Product(this.product[0].name, this.product[0].price,this.product[0].UrlCover,this.product[0].UrlDetail,this.product[0].UrlDetail1,this.product[0].id,this.product[0].brand,this.product[0].type,this.productSize))
     this.cartService.cartLength.next(this.cartService.getCartProducts().length)
     this.Router.navigate(['/cart'])
   }

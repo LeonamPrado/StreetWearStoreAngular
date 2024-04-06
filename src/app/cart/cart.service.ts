@@ -18,7 +18,6 @@ export class CartService{
   }
 
   addToCart(product: Product){  
-    let a = product
-    this.cartProducts.push(a)
+    this.cartProducts.push(product)
   }
 }
