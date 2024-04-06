@@ -34,6 +34,7 @@ a {
   position:relative;
   left:-20px;
   top:-20px;
+  opacity:0.9;
 }
 @media (max-width: 1245px) {
   .logo {
