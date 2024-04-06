@@ -1,0 +1,81 @@
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 74px;
+  letter-spacing: -6px;
+  rotate: z -5deg;
+  color: rgb(255, 255, 255);
+  text-shadow: rgba(255, 255, 255, 0.315) 15px 25px;
+}
+.cartNumber {
+  color: red;
+  font-size: 22px;
+}
+.divCart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  width: auto;
+  height: 65px;
+}
+.badge:after{
+  content:attr(id);
+  font-size:14px;
+  color: #ff0000;
+  background: white;
+  border-radius:50%;
+  padding: 0 5px;
+  position:relative;
+  left:-20px;
+  top:-20px;
+  opacity:0.9;
+}
+@media (max-width: 1245px) {
+  .logo {
+    font-size: 54px;
+  }
+}
+@media (max-width: 1015px) {
+  .logo {
+    font-size: 34px;
+  }
+  .icon{
+    height: 45px;
+  }
+}
+
+@media (max-width: 630px) {
+  .logo {
+    font-size: 30px;
+  }
+}
+@media (max-width: 565px) {
+  .title {
+    font-size: 18px;
+  }
+  .cartNumber{
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .cartNumber {
+    font-size: 12px;
+  }
+}
+@media (max-width: 415px) {
+  .title {
+    font-size: 14px;
+  }
+  .logo {
+    font-size: 21px;
+  }
+  .cartNumber{
+    font-size: 10px;
+  }
+}

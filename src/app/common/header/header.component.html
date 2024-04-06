@@ -1,0 +1,27 @@
+<div class="container-fluid bg-black">
+  <div class="row d-flex align-items-center">
+    <div class="col-xl-2 col-sm-3 col-4">
+      <a routerLink="">
+        <!--<img class="img-fluid w-75 logo" src="assets/common/logoSite.png" alt="">-->
+        <p class="logo p-3">STREETedge</p>
+      </a>
+    </div>
+    <div class="col-xl-8 col-sm-6 col-4 text-center">
+      <h2 class="title" style="color: white">THE BEST OF STREET WEAR</h2>
+    </div>
+    <div class="col divCart">
+      <div>
+        <a routerLink="/cart" class="decoration">
+          <span [ngClass]="cartLength !== 0 ? 'badge' : ''" [id]="cartLength">
+              <img
+              class="img-fluid icon"
+              src="assets/common/cartLogo.png"
+              alt=""
+            />
+          </span>
+
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container-xxl mt-4">
+  <div class="card-group row ">
+    <div class="col-sm-4 col-xxl-3 col-6" *ngFor="let product of products">
+      <a href="" class="decoration" [routerLink]="['/product/',product.id]">
+        <div class="card border-0" style="height: 100%">
+          <div class="imgCover">
+            <img
+              class="card-img-top"
+              [src]="product.UrlCover"
+              alt="Card image cap"
+            />
+          </div>
+          <div class="card-body text-center">
+            <p class="card-title h3">{{ product.name }}</p>
+          </div>
+          <div class="card-footer text-center bg-transparent mb-2 border-0">
+            <p class="card-text h4 priceFont" style="color: rgb(116, 116, 116)">
+              R${{ product.price }}
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

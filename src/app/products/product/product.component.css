@@ -1,0 +1,87 @@
+
+
+.priceFont{
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.sizeSelect{
+  width: 100px;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+th{
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+.carousel-indicators {
+  bottom: 60px;
+}
+@media (max-width: 1150px) {
+  .carousel-indicators {
+    bottom: 60px;
+  }
+}
+@media (max-width: 950px) {
+  .carousel-indicators {
+    bottom: 120px;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-indicators {
+    bottom: 180px;
+  }
+}
+@media (max-width: 650px) {
+  .carousel-indicators {
+    bottom: 240px;
+  }
+}
+@media (max-width: 519px) {
+  .carousel-indicators {
+    bottom: 300px;
+  }
+  .priceFont{
+    font-size: 17px;
+  }
+  .h3{
+    font-size: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .carousel-indicators {
+    bottom: 360px;
+  }
+}
+@media (max-width: 402px) {
+  .carousel-indicators {
+    bottom: 400px;
+  }
+  .h3{
+    font-size: 14px;
+  }
+  .priceFont{
+    font-size: 13px;
+  }
+  .sizeSelect{
+    width: 70px;
+    font-size: 10px;
+  }
+  @media (max-width: 385px) {
+    .btn-danger{
+      font-size: 15px;
+      width: 120px;
+    }
+    .sTable{
+      font-size: 10px;
+    }
+  }
+  
+}
+

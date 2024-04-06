@@ -1,0 +1,40 @@
+<div class="container-xl">
+  <div class="row" *ngIf="cartProducts.length === 0">
+    <div class="col-sm text-center mt-5">
+      <p class="h1">Empty Cart</p>
+      <button
+        routerLink=""
+        type="button"
+        class="btn btn-danger mt-5"
+        style="width: 200px; font-size: 20px"
+      >
+        Products
+      </button>
+    </div>
+  </div>
+  <div class="row" *ngFor="let product of cartProducts; index as i">
+    <div class="col-sm"></div>
+    <div class="col-sm-3 col-4">
+      <a href="" [routerLink]="['/product/',product.id]">
+        <img [src]="product.UrlCover"  class="img-fluid" alt="" />
+      </a>
+      <p></p>
+    </div>
+    <div class="col-sm-4 col-5 my-auto text-center">
+      <p class="h4 font truncate">{{ product.name }}</p>
+      <p class="h5 font" >Size: {{ product.size }}</p>
+      <button type="button" class="btn btn-danger mt-2 removeBtn text-center" (click)="onRemove(i)">X</button>
+    </div>
+    <div class="col-xl-2 col-sm-3 col-3 my-auto d-flex text-center">
+      <input type="number" class="input" min="1" [value]="product.qtd" #qtd (change)="onSelected(i)">
+      <p class="h4 priceFont my-auto" style="color: rgb(116, 116, 116)">R${{ product.price * product.qtd }}
+      </p>
+    </div>
+    <div class="col-sm"></div>
+  </div>
+  <div class="row" *ngIf="cartProducts.length !== 0">
+    <div class="col text-center">
+      <button type="button" class="btn btn-danger btn-lg px-5 mt-5" >Buy</button>
+    </div>
+  </div>
+</div>

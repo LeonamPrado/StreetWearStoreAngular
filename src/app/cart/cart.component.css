@@ -1,0 +1,61 @@
+.container-xl{
+  min-height: 70vh;
+}
+.priceFont{
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.input{
+  height: 40px; width: 45px; font-size: 20px;
+}
+@media (max-width: 876px){
+  .priceFont{
+    font-size: 20px;
+  }
+  .font{
+    font-size: 18px;
+  }
+}
+@media (max-width: 740px){
+.container-xl{
+  margin-top: 30px;
+}
+}
+@media (max-width: 617px){
+  .row{
+    margin: 20px
+  }
+  .priceFont{
+    font-size: 16px;
+  }
+  .font{
+    font-size: 14px;
+  }
+  .removeBtn{
+    height: 30px;
+    width: 40px;
+    font-size: 12px;
+  }
+  .input{
+    height: 30px; width: 30px; font-size: 14px;
+  }
+}
+@media (max-width: 430px){
+  .priceFont{
+    font-size: 12px;
+  }
+  .font{
+    font-size: 10px;
+  }
+  .input{
+    height: 24px; width: 24px; font-size: 12px;
+  }
+  }
+  @media (max-width: 312px){
+    .priceFont{
+      font-size: 12px;
+    }
+    .font{
+      font-size: 8px;
+    }}
