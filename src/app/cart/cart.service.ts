@@ -5,7 +5,7 @@ import { Subject } from "rxjs";
 @Injectable({providedIn: 'root'})
 
 export class CartService{
-  public cartProducts: Product[] = JSON.parse(localStorage.getItem('cartProducts'))
+  public cartProducts: Product[] = []
 
   cartLength = new Subject<number>()
 
@@ -17,10 +17,8 @@ export class CartService{
   return this.cartProducts.splice(i,1)
   }
 
-  addToCart(product: Product){
-    const a = JSON.parse(localStorage.getItem('cartProducts'))
-    console.log(a)
-    a.push(product)
-    this.cartProducts = a
+  addToCart(product: Product){  
+    let a = product
+    this.cartProducts.push(a)
   }
 }

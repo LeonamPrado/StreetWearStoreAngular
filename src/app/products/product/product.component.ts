@@ -29,12 +29,13 @@ export class ProductComponent implements OnInit {
     if(this.productSize === ''){
       return alert('Select the size')
     }
-    if(this.cartService.getCartProducts().map((a)=>a).filter((p)=>p.id === this.id && p.size === this.productSize).length !== 0){
-      return this.Router.navigate(['/cart'])
-    }
-    this.product[0].size = this.productSize
+    //if(this.cartService.getCartProducts().map((a)=>a).filter((p)=>p.id === this.id && p.size === this.productSize).length !== 0){
+      //return this.Router.navigate(['/cart'])
+    //}
+    //this.product[0].size = this.productSize
+    console.log(this.product[0])
     this.cartService.addToCart(this.product[0])
-    this.cartService.cartLength.next(this.cartService.getCartProducts().length)
+    //this.cartService.cartLength.next(this.cartService.getCartProducts().length)
     this.Router.navigate(['/cart'])
   }
 }

@@ -15,16 +15,13 @@ export class CartComponent implements OnInit {
 
   ngOnInit() {
     this.cartProducts = this.cartService.getCartProducts();
-    localStorage.setItem('cartProducts', JSON.stringify(this.cartProducts));
   }
   onSelected(i: number) {
     this.cartProducts[i].qtd = +this.qtd.nativeElement.value
-    localStorage.setItem('cartProducts', JSON.stringify(this.cartProducts));
   }
 
   onRemove(i: number) {
     this.cartService.removeProduct(i);
-    localStorage.setItem('cartProducts', JSON.stringify(this.cartProducts));
     this.cartService.cartLength.next(this.cartService.getCartProducts().length);
   }
 }
